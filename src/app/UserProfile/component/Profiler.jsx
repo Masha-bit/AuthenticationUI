@@ -29,7 +29,7 @@ export default function Profiler(props) {
             <EditButton onClick={handleEdit} isEdit={isEdit}/>
         </div>
 
-        <div className='h-[auto] w-[80%]  flex-wrap flex justify-between'>
+        <div className='h-[auto] w-[80%]  flex-wrap flex sm:flex-col justify-between'>
             {
                 isEdit?
                 props.detail.map((item)=>(

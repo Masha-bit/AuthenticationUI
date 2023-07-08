@@ -63,7 +63,7 @@ export default function page() {
   return (
     <main className='h-[100vh] w-[100vw] bg-white font-nunito flex items-center justify-center relative'>
       {/* sidenav */}
-      <div className='h-[100vh] w-[20%]  flex flex-col items-center p-3  relative'>
+      <div className='h-[100vh] w-[20%]  flex flex-col items-center p-3  relative sm:hidden'>
         
         <div className='h-[auto] w-[90%] flex flex-row text-[#2b2b2bdb] my-5'>
           <div className='h-[50px] w-[50px] rounded-full bg-[#1c1360] mr-2'></div>
@@ -129,9 +129,9 @@ export default function page() {
         </div>
       </div>
 
-      <div className='h-[100vh] w-[80%] rounded-2xl bg-[#e2e1e1] p-[1rem] relative'>
+      <div className='h-[100%] sm:w-[100vw] w-[80%] rounded-2xl bg-[#e2e1e1] p-[1rem] relative'>
         <h1 className='font-[600] text-[20px]'>Account Setting</h1>
-        <div className='h-[80%] w-[97%] rounded-2xl mt-5 bg-white absolute right-0 flex items-center'>
+        <div className='h-[80%] sm:h-[100vh] w-[97%] rounded-2xl mt-5 bg-white absolute right-0 flex items-center'>
 
           <aside className='h-[100%] w-[20%] p-1'>
         <NavList title={''} item={[
