@@ -70,7 +70,7 @@ function OtpVal() {
         />
       </div>
       <main
-        className={`font-nunito h-[100%] w-[42%] flex flex-col justify-center items-center text-${text_color} relative`}
+        className={`font-nunito h-[100%] w-[42%] sm:w-[100vw] flex flex-col justify-center items-center text-${text_color} relative`}
       >
         <h1 className={`text-[23px] font-semibold text-${dark_blue} w-[60%]`}>
           ENTER OTP.

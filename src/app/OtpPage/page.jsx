@@ -83,7 +83,7 @@ function OtpPage() {
         />
       </div>
       <main
-        className={`font-nunito h-[100%] w-[42%] flex flex-col justify-center items-center text-${text_color} relative`}
+        className={`font-nunito h-[100%] w-[42%] sm:w-[100vw] flex flex-col justify-center items-center text-${text_color} relative`}
       >
         <h1 className={`text-[23px] font-semibold text-${dark_blue} w-[60%]`}>
           Forgot Password?
@@ -140,10 +140,10 @@ export default function page() {
   return (
     <html lang="en">
     <body className="h-[100vh] w-[100vw] bg-[#b6b3a3] m-0 p-0 flex flex-row font-nunito">
-      <div className="h-[100%] w-[42%] sm:w-[100%] bg-white"><OtpPage/></div>
+      <div className="h-[100%] w-[42%] sm:w-[100vw] bg-white"><OtpPage/></div>
 
       <div
-        className="h-[100%] w-[58%] flex flex-col items-center bg-right text-white relative p-[1rem] sm:hidden"
+        className="h-[100%] w-[58%]  flex flex-col items-center bg-right text-white relative p-[1rem] sm:hidden"
         style={{ backgroundImage: 'url(/bg.png)' }}
       >
         {/* <div className='h-[100%] w-[100%] absolute top-0 left-0 z-[1]'>
