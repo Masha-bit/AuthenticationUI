@@ -15,7 +15,7 @@ export default function OtpPage() {
   const otp =
     typeof window !== 'undefined'
       ? JSON.parse(localStorage.getItem('OTP') || `[]`)
-      : null;
+      : [];
 
   const [otpInputs, setOtpInputs] = useState(['', '', '', '']);
   const otp_BETA_TEST = [1, 2, 3, 4]; // Replace with your actual OTP array
