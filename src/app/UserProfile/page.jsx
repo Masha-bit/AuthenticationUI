@@ -59,6 +59,18 @@ export default function page() {
     e = e.charAt(0).toUpperCase() + e.slice(1).trim()
     setBio(e)
   }
+  const handleDelete = ()=>{
+    setBio('')
+    setCity('')
+    setCountry("")
+    setEmail('')
+    setFirstName('')
+    setLastName('')
+    setPhone('')
+    setPost('')
+    setTaxId('')
+
+  }
 
   return (
     <main className='h-[100vh] w-[100vw] bg-white font-nunito flex items-center justify-center relative'>
@@ -170,7 +182,8 @@ export default function page() {
             {
               name: 'Delete Account',
               icon: '',
-              important: true,
+              important: '[#ff2b2b]',
+              onClick: (handleDelete)
             }
           ]
         }/>
