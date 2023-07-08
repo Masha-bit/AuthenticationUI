@@ -66,7 +66,7 @@ function PassPage() {
 
   return (
     <main
-      className={`font-nunito h-[100%] w-[100%] flex flex-col justify-center items-center text-${text_color} relative`}
+      className={`font-nunito h-[100vh] w-[100%] flex flex-col justify-center items-center text-${text_color} relative`}
     >
       {/* <script src="https://apis.google.com/js/platform.js" async defer></script>
       <meta name="google-signin-client_id" content="754338394520-dmirr1s2l0mmjs2046j9bitrhip7tmei.apps.googleusercontent.com "></meta> */}
