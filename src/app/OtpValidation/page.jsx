@@ -12,10 +12,11 @@ export default function OtpPage() {
   const light_blue = '[#5137ff]';
   const dark_blue = '[#1c1360]';
 
-  const otp =
-    typeof window !== 'undefined'
-      ? JSON.parse(localStorage.getItem('OTP') || `[]`)
-      : [];
+  var otp = []
+
+  typeof window !== 'undefined'?
+    otp = JSON.parse(localStorage.getItem('OTP') || `[]`)
+      : otp = [];
 
   const [otpInputs, setOtpInputs] = useState(['', '', '', '']);
   const otp_BETA_TEST = [1, 2, 3, 4]; // Replace with your actual OTP array
