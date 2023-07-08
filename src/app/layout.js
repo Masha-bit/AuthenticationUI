@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import './globals.css';
 import { Inter } from 'next/font/google';
 import FloatingShapes from './Home/component/FloatingShapes';
@@ -10,11 +11,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html>
-        <head>
-        </head>
-        <body className='h-[100vh] w-[100vw] bg-[#b6b3a3] m-0 p-0 flex items-center justify-center font-nunito'>
-        {children}            
-        </body>
-        </html>
+      <head>
+    </head>
+    <body>
+    {children}            
+    </body>
+    </html>
   );
 }

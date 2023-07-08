@@ -8,7 +8,7 @@ export default function RootLayout({ children }) {
             <meta name="viewport" content="width=device-width, initial-scale=1.0" />
             <title>Document</title>
         </head>
-        <body className='h-[100vh] w-[100vw] bg-[#b6b3a3] m-0 p-0 flex items-center justify-center font-nunito'>
+        <body className='h-[100vh] bg-[#b6b3a3] m-0 p-0 flex items-center justify-center font-nunito'>
         {children}            
         </body>
         </html>
