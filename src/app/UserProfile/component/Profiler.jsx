@@ -1,9 +1,9 @@
 'use client'
-import React, { useState } from 'react'
-import { BiEditAlt } from 'react-icons/bi'
-import EditButton from './EditButton'
-import Popup from '@/app/Home/component/Popup'
-import { AiOutlineCheckCircle } from 'react-icons/ai'
+import React, { useState } from 'react';
+import { BiEditAlt } from 'react-icons/bi';
+import EditButton from './EditButton';
+import Popup from '@/app/Home/component/Popup';
+import { AiOutlineCheckCircle } from 'react-icons/ai';
 
 export default function Profiler(props) {
 
@@ -34,8 +34,8 @@ export default function Profiler(props) {
                 isEdit?
                 props.detail.map((item)=>(
                     <label className='w-[50%] my-3'>
-                        <p className='text-[12px] text-[#2b2b2bdb]'>{item.name}</p>
-                        <input className='text-[14px] border-[1px] rounded-md outline-none h-[auto] w-[auto]' placeholder={`${item.value.length > 25 ? item. value.slice(0,25) + `...`: item.value}`} onChange={item.onChange} ref={item.ref}/>
+                        <p id='input-group__input' className='text-[12px] text-[#2b2b2bdb] '>{item.name}</p>
+                        <input id='input-group__label' className='text-[14px] border-[1px] rounded-md outline-none h-[auto] w-[auto]' placeholder={`${item.value.length > 25 ? item. value.slice(0,25) + `...`: item.value}`} onChange={item.onChange} ref={item.ref}/>
                     </label>
                 )):
                 props.detail.map((item)=>(
@@ -46,7 +46,7 @@ export default function Profiler(props) {
                 ))
             }
         </div>
-
+        
     </div>
   )
 }

@@ -5,6 +5,7 @@ import { BiHome, BiPlus } from 'react-icons/bi'
 import BioProfiler from './component/BioProfiler'
 import Profiler from './component/Profiler'
 
+
 export default function page() {
 
   

@@ -22,8 +22,10 @@ export default function page() {
         </h1>
 
         <h3 className="h-[auto] w-[70%] text-center text-[14px]">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.{' '}
+          There's a new bar HR. Now, you can empower your team and drive 
+          your business with one modern, easy-to-use platform.
+          {/* Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.{' '} */}
         </h3>
 
         <div className="flex items-center justify-center mt-[2rem]">

@@ -1,0 +1,17 @@
+#input-group__input{
+    padding: 10px;
+}
+
+#input-group__label{
+    position: absolute;
+    top:0;
+    left:0;
+    transform: translate(10px, 10px);
+    transform-origin: left;
+    transition: transform 200ms;
+}
+
+#input-group__input:focus  #input-group__label,
+#input-group__input:valid  #input-group__label{
+    transform: translate(0, -30px) scale(0.8);
+}
